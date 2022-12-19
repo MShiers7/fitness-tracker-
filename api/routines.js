@@ -143,6 +143,7 @@ router.post('/:routineId/activities', async(req, res, next) => {
         
         
         if (!routineActivitiyByRoutine && !routineActivityByActivitity) {
+            
             console.log('routineActivitiyByRoutine', routineActivitiyByRoutine)
             const newRoutineActivity = await addActivityToRoutine({
             routineId: routineId, 
